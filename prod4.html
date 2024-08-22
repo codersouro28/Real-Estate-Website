@@ -1,0 +1,179 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa:wght@600&family=Righteous&family=Roboto+Condensed:ital,wght@1,700&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+</head>
+<body>
+    <div class="navContainer">
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logoimg">
+                <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+            </div>
+            <div class="logoh3">
+                <h3 style="color:rgb(255, 94, 0);">Real estate <span id="dot">.</span></h3>
+            </div>
+            </div>
+            <div>
+                <ul class="navlist">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Pages<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown_menu">
+                            <ul>
+                                <li><a href="./listing.html">Buy</a></li>
+                                <li><a href="./error404.html">Sell</a></li>
+                                <li><a href="./listing-rent.html">Rent</a></li>
+                                <li><a href="./error404.html">PG/Co-Living</a></li>
+                            </ul>
+                        </div>
+                    
+                    </li>
+                    <li><a href="./error.html">Dealers</a></li>
+                    <li><a href="./contactus.html">Help</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button onclick="window.location='signup.html'">Login/Register</button>
+            </div>
+        </nav>
+    </div>
+    <div class="caintainer">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                    <div class="small-images">
+                        <img src="./images/10.jpg" onclick="clickimg(this)" alt="">
+                        <img src="./images/11.jpg" onclick="clickimg(this)" alt="">
+                        <img src="./images/12.jpg" onclick="clickimg(this)" alt="">
+                        
+                    </div>
+                    <div class="main-images">
+                        <img src="./images/10.jpg" id="imagebox" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand"> Home/Property</p>
+                    <h2>La Convent</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">₹77,990</p>
+                        <strike>₹80,990</strike>
+                    </div>
+                    <p class="rent">Rent: <select name="size">
+                        <option value="1month">1 month</option>
+                        <option value="2month">2 months</option>
+                        <option value="3month">3 months</option>
+                        <option value="6month">6 months</option>
+                    </select></p>
+
+                    <p class="rooms">Rooms <input type="number" min="0" max="6"></p>
+                    <button>
+                        <span class="fa fa-shopping-bag"></span>
+                        Buy Now
+                    </button>
+                    <div class="product-details">
+                        <h1 class="dh1">Product Details</h1>
+                        <p>
+                            La Convent
+                            (Entally, Kolkata Central)
+                            9.	7 BHK Apartment 
+                            10.	Well furnished with swimming pool 
+                            11.	5,000 – 6,500 sq. Ft.
+                            12.	Starting Price – Rs. 12 Cr.
+                            <br>
+            
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="row row-2">
+        <h2 class="prod-h1">Recent Listings  </h2>
+        <!-- <select>
+            <option>Default Sorting</option>
+            <option>Price Low to High</option>
+            <option>Price High to Low</option>
+            <option>By Popularity</option>
+            <option>By Rating</option>
+            <option>By Sale</option>
+        </select> -->
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="./prod1.html"><img src="images/1.jpg"></a>
+            <h4>Mani Crest</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs. 2.26 Cr&#8377;</p>
+        </div>
+        <div class="col-4">
+            <a href="./prod2.html"><img src="images/4.jpg"></a>
+            <h4>Silver Oak</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs. 10 Cr&#8377;</p>
+        </div>
+        <div class="col-4">
+            <a href="./prod3.html"><img src="images/7.jpg"></a>
+            <h4>Sapphire Blue</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs. 1 Cr&#8377;</p>
+        </div>
+        <div class="col-4">
+            <a href="./prod4.html"><img src="images/10.jpg"></a>
+            <h4>La Convent</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs. 12 Cr&#8377;</p>
+        </div>	
+    </div>
+   
+
+
+    <script src="./js/prod.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
